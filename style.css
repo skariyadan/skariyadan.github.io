@@ -72,4 +72,8 @@ body
       linear-gradient(to bottom, var(--white), var(--primary--50));
   }
 
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
