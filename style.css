@@ -63,4 +63,13 @@ h6 {font-size: 1.4rem;}
 h7 {font-size: 1.2rem;}
 h8 {font-size: 1rem;}
 
+body 
+{
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, var(--primary--100) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--primary--100) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--white), var(--primary--50));
+  }
+
 
