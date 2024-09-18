@@ -75,7 +75,7 @@ body
 
   .wrapper {
     display: grid;
-    grid-template-columns: 35vw auto;
+    grid-template-columns: 50vw auto;
     padding-left: 5rem;
     padding-right: 5rem;
   }
