@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --primary: #028EB2;
+    --secondary: #09BC8A;
+    --black: #222222;
+    --white: #FDFDFF;
+    --black--900: #393939;
+    --black--800: #4B4B4B;
+    --black--700: #5E5E5E;
+    --black--600: #727272;
+    --black--500: #868686;
+    --black--400: #9B9B9B;
+    --black--300: #B0B0B0;
+    --black--200: #C6C6C6;
+    --black--100: #DDDDDD;
+    --black--50: #F3F3F3;
+    --primary--900: #004055;
+    --primary--800: #005470;
+    --primary--700: #006889;
+    --primary--600: #007DA0;
+    --primary--500: #1991B5;
+    --primary--400: #4BA6C7;
+    --primary--300: #74BAD7;
+    --primary--200: #9CCEE4;
+    --primary--100: #C4E2F0;
+    --primary--50: #EBF5FA;
+    --secondary--900: #004529;
+    --secondary--800: #005A37;
+    --secondary--700: #007047;
+    --secondary--600: #008658;
+    --secondary--500: #009B6C;
+    --secondary--400: #23AF83;
+    --secondary--300: #5BC39B;
+    --secondary--200: #8AD6B6;
+    --secondary--100: #B9E7D2;
+    --secondary--50: #E8F7F0;
+}
+
+p
+{
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--black);
+    font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Bubbler One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary);
+}
+
+h1 {font-size: 4.8rem;}
+h2 {font-size: 3.6rem;}
+h3 {font-size: 3.2rem;}
+h4 {font-size: 2.4rem;}
+h5 {font-size: 2rem;}
+h6 {font-size: 1.6rem;}
+h6 {font-size: 1.4rem;}
+h7 {font-size: 1.2rem;}
+h8 {font-size: 1rem;}
+
+body 
+{
+    background-size: 2.4rem 2.4rem;
+    background-image:
+      linear-gradient(to right, var(--primary--100) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--primary--100) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--white), var(--primary--50));
+    padding: 5rem;
+  }
+ 
