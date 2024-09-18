@@ -77,41 +77,4 @@
     padding-right: 5rem;
   }
 
-  navbar {
-    display: flex;
-    position: sticky;
-    align-items: center;
-    justify-content: space-between;
-    top: 0px;
-    background: var(--primary);
-    background-size: cover;
-    color: var(--black);
-    padding: 10px 20px;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.nav-list li {
-    margin-right: 20px;
-}
-
-.nav-list li:last-child {
-    margin-right: 0;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: var(--black);
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-    font-family: "Bubbler One", sans-serif;
-}
-
-.nav-list li a:hover {
-    color: var(--primary)
-    /* Change the color on hover */
-}
-
+  
