@@ -1,0 +1,117 @@
+
+.introduction {
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+
+    /*text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 15px;
+    color: var(--black);*/
+    background-color: var(--secondary--100);
+    padding: 50px;
+    border-radius: 11px;
+    position: relative;
+    box-shadow: 20px 20px var(--secondary);
+  }
+
+  .introduction p:after {
+    transform: translatey(0px);
+    animation: float2 5s ease-in-out infinite;
+    content: ".";
+    font-weight: bold;
+    -webkit-text-fill-color: var(--secondary--100);
+    text-shadow: 22px 22px var(--secondary);
+    text-align: left;
+    font-size: 55px;
+    width: 55px;
+    height: 11px;
+    line-height: 30px;
+    border-radius: 11px;
+    background-color: var(--secondary--100);
+    position: absolute;
+    display: block;
+    bottom: -30px;
+    left: 0;
+    box-shadow: 22px 22px var(--secondary);
+    z-index: -2;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float2 {
+    0% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+    55% {
+      transform: translatey(-20px);
+    }
+    60% {
+      line-height: 10px;
+    }
+    100% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+  }
+
+
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50vw auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    background: var(--primary);
+    background-size: cover;
+    color: var(--black);
+    padding: 10px 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    font-family: "Bubbler One", sans-serif;
+}
+
+.nav-list li a:hover {
+    color: var(--primary)
+    /* Change the color on hover */
+}
+
