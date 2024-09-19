@@ -1,38 +1,65 @@
-navbar {
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    //width: 100%; /* Full width */   
+    left: 0px;
+    right: 0px;
     display: flex;
-    position: sticky;
     align-items: center;
     justify-content: space-between;
-    top: 0px;
-    background: var(--primary);
+    background-color: #FDFDFF50;
+    //background: var(--primary);
     background-size: cover;
-    color: var(--black);
-    padding: 10px 20px;
+    backdrop-filter: blur(2px);
+    //color: var(--black);
+    //padding: 10px 20px;
+    padding: .5vh 2vw .5vh 2vw;
+    z-index: 10;
+}
+
+.logo
+{
+    height: 4rem;
+    width: auto;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logo:hover
+{
+    transform: scale(1.06);
 }
 
 .nav-list {
     display: flex;
     list-style: none;
+    width: 100%;
+    justify-content: right;
+    gap: 1.5vw;
 }
 
 .nav-list li {
-    margin-right: 20px;
+    //margin-right: 20px;
 }
 
 .nav-list li:last-child {
-    margin-right: 0;
+    //margin-right: 0;
 }
 
 .nav-list li a {
     text-decoration: none;
     color: var(--black);
-    font-size: 18px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: var(--black);
+    font-size: 1.8rem;
+    margin:0;
     transition: color 0.3s ease-in-out;
     font-family: "Bubbler One", sans-serif;
 }
 
 .nav-list li a:hover {
-    color: var(--primary)
+    color: var(--primary);
+    -webkit-text-stroke-color: var(--primary);
+    -webkit-text-stroke-width: 1px;
     /* Change the color on hover */
 }
 
