@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
+import { WorkCardComponent } from '../work-card/work-card.component';
 import {ElementRef, HostListener, ViewChild } from '@angular/core';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavigationComponent],
+  imports: [NavigationComponent, WorkCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

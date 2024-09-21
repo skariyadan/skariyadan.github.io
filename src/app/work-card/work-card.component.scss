@@ -1,0 +1,38 @@
+.card-body {
+    margin: 50px auto;
+    border: 5px solid #fff;
+    background: var(--white);
+    width: auto;
+    height: auto;
+    position: relative;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.4), 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.cover {
+    width: 600px;
+    height: 450px;
+    border: solid 1px;
+    border-color: #22222240;
+}
+.card-body:before {
+    content: "";
+    height: 40px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, .3);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: translateX(-30%) translateY(10%) rotate(-45deg);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.card-body:after {
+  content: "";
+  height: 40px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  transform: translateX(30%) translateY(10%) rotate(45deg);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
