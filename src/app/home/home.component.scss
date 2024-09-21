@@ -8,6 +8,7 @@
     padding-left: 8vw;
     padding-right: 8vw;
     margin-top: 10vh;
+    min-height: 90vh;
 }
 
 .profile 
@@ -187,7 +188,7 @@
     align-content: stretch;
     gap: 0px;
     float:top; 
-    z-index: -1;
+    width: 2rem;
   }
 
   #line-content
@@ -219,11 +220,29 @@
     }
   }
 
+ #pointer
+ {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0;
+  //margin-right:8rem; //toggle on when want to show point-right
+  width: 4rem; //toggle off when want to show point-left
+ }
+
   #point 
   {
     margin-top: -5%;
     float: top;
     width: 4rem;
+    //transform: rotate(90deg); //toggle on when want to show point-right
+  }
+
+  #point-left
+  {
+    height: 2rem;
+    width: 6rem;
+    background-color: var(--secondary);
+    border-radius: 0 0 1rem 0;
   }
 
   @media screen and (max-width: 650px) 
@@ -234,8 +253,19 @@
     }
   }
 
-  #filler
+  #my-work
   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
     height: 1000px;
+  }
+
+  #my-work h1
+  {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--primary);
+    line-height: 0;
   }
 
