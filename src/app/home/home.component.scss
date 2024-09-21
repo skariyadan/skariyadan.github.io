@@ -1,59 +1,4 @@
-.me{
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-}
-
-#arrow
-{
-  margin-top:.5rem;
-  margin-left: 1rem;
-}
-
-a
-{
-  display: inline-block;
-  width: max-content;
-  height: 2rem;
-  font-family: "Sen", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--black);
-  font-size: 2rem;
-  text-decoration: none;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-}
-
-a span{
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-}
-
-a:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--primary);
-  transition: all .35s;
-}
-
-a:hover{
-  color: var(--white);
-}
-
-a:hover:after{
-  width: 100%;
-}
-
-.hero
+.hero 
 {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -65,14 +10,23 @@ a:hover:after{
     margin-top: 10vh;
 }
 
-.profile
+.profile 
 {
   width: 100%;
   height: auto;
   animation: profile-float 5s linear infinite;
 }
 
-.introduction {
+#me 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.introduction 
+{
     transform: translatey(0px);
     animation: intro-float 5s ease-in-out infinite;
     background-color: var(--white);
@@ -88,7 +42,8 @@ a:hover:after{
     box-shadow: 20px 20px var(--black);
   }
 
-  .introduction :after {
+  .introduction :after 
+  {
     transform: translatey(0px);
     animation: intro-accent-float 5s ease-in-out infinite;
     content: "";
@@ -105,41 +60,50 @@ a:hover:after{
     z-index: -2;
   }
   
-  @keyframes intro-float {
-    0% {
+  @keyframes intro-float 
+  {
+    0% 
+    {
       transform: translatey(0px);
     }
-    50% {
+    50% 
+    {
       transform: translatey(-20px);
     }
-    100% {
+    100% 
+    {
       transform: translatey(0px);
     }
   }
   
-  @keyframes intro-accent-float {
-    0% {
-      //line-height: 10rem;
+  @keyframes intro-accent-float 
+  {
+    0% 
+    {
       transform: translatey(0rem);
     }
-    55% {
+    55% 
+    {
       transform: translatey(-5px);
     }
-    100% {
-      //line-height: 10rem;
+    100% 
+    {
       transform: translatey(0rem);
     }
   }
 
-  @keyframes profile-float {
-    0% {
+  @keyframes profile-float 
+  {
+    0% 
+    {
       transform: translatey(0px) rotate(-.2deg);
     }
-    50%
+    50% 
     {
       transform: translatey(2px) rotate(.2deg);
     }
-    100% {
+    100% 
+    {
       transform: translatey(0px) rotate(-.2deg);
     }
   }
@@ -148,7 +112,6 @@ a:hover:after{
   {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: var(--primary);
-    //line-height: 0rem;
     margin: 0;
     font-size: 6rem;
   }
@@ -170,12 +133,97 @@ a:hover:after{
     color: var(--primary--900);
     font-size: 2rem;
   }
-
-  .seework
+  
+  #arrow
   {
-    letter-spacing: 2px;
-  display: inline-block;
-  align-items: top;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    height: 6rem;
+    margin-left: 40%;
+    margin-right: -4rem;
+    transition: 400ms ease-in-out;
+  }
+
+  #arrow:hover
+  {
+    -webkit-filter: drop-shadow(12px 12px var(--black));
+  }
+
+  #horizontal
+  {
+    height: 6rem;
+    width: 100%;
+    background-color: var(--secondary);
+    margin-right: -2rem;
+    display:table;
+    padding-left: 2rem;
+   // border-radius: 0 2rem 0 0;
+    transition: width 800ms ease-in-out;
+  }
+
+  #horizontal h3
+  {
+    text-align:left; 
+    vertical-align: middle;
+    display: table-cell;  
+    -webkit-text-stroke-width: 1px;
+    color: var(--black);
+    -webkit-text-stroke-color: var(--black);
+    line-height: 0;
+  }
+
+  #arrow:hover  #horizontal
+  {
+    //width: 100%;
+  }
+
+  #straight 
+  {
+    position: sticky; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    gap: 0px;
+    float:top; 
+    z-index: -1;
+  }
+
+  #line-content
+  {
+    width: 2rem;
+    height: 140px;
+    border-radius: 0 1rem 0 0;
+    background: var(--secondary);
+  }
+
+  #arrow:hover #line-content:not(.no-hover)
+  {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse 
+  {
+    0% 
+    {
+      height: 140px;
+    }
+    50%
+    {
+      height: 160px;
+    }
+    100% 
+    {
+      height: 140px;
+    }
+  }
+
+  #point 
+  {
+    margin-top: -5%;
+    float: top;
+    width: 4rem;
   }
 
   @media screen and (max-width: 650px) 
@@ -185,3 +233,9 @@ a:hover:after{
       width: max-content;
     }
   }
+
+  #filler
+  {
+    height: 1000px;
+  }
+

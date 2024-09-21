@@ -34,7 +34,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+             
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -51,7 +53,7 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
+                  "maximumWarning": "2.5kB",
                   "maximumError": "4kB"
                 }
               ],
