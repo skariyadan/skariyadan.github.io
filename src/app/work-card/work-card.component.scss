@@ -14,7 +14,7 @@
 .card-body:hover
 {
     animation: shake 750ms ease-in-out;
-    background: var(--primary--50);
+    background: var(--secondary--100);
 }
 
 @keyframes shake 
@@ -49,7 +49,7 @@
 
 .cover 
 {
-    width: 600px;
+    width: 25vw;
     height: auto;
 }
 
@@ -93,12 +93,13 @@
     width: auto;
     //justify-content: flex-end;
     align-items: flex-end;
+    width: 100%;
 
 }
 
 .details .title
 {
-    line-height: 0;
+ //   line-height: 0;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--black);
     color: var(--black);
@@ -108,7 +109,7 @@
 
 .details .description
 {
-    line-height: 0;
+    //line-height: 0;
     width: 100%;
    // border: solid 4px;
 }
@@ -121,6 +122,7 @@
     border-radius: 5px;
     width: max-content;
     padding-top: .5rem;
+    margin-right: 5%;
 
     font-family: "Sen", sans-serif;
     font-optical-sizing: auto;
