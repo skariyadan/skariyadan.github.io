@@ -14,10 +14,10 @@ import {ElementRef, HostListener, ViewChild } from '@angular/core';
 
 export class HomeComponent{
   @HostListener('document:scroll', ['$event'])
+  
   public onViewportScroll() 
   {
     {
-      console.log(pageYOffset);
       const demoDiv = document.querySelector("#line-content");
       if (demoDiv)
       {
@@ -30,8 +30,18 @@ export class HomeComponent{
             demoDiv.classList.remove("no-hover");
           }
         demoDiv.setAttribute('style', 'height: '+(pageYOffset+140)+'px;'); 
-        console.log(demoDiv.getAttribute('style'));
       }
+    }
+  }
+
+  public scrollto() 
+  {
+    console.log("hi");
+    var work = document.querySelector("#my-work");
+    if (work)
+    {
+      console.log(work);
+      work.scrollIntoView({behavior:"smooth"});
     }
   }
  

@@ -8,6 +8,7 @@
     padding-left: 8vw;
     padding-right: 8vw;
     margin-top: 10vh;
+    //margin-bottom: 10vh;
     min-height: 80vh;
 }
 
@@ -142,7 +143,7 @@
     align-items: top;
     height: 6rem;
     margin-left: 40%;
-    margin-right: -4rem;
+    margin-right: -8rem;
     transition: 400ms ease-in-out;
   }
 
@@ -260,7 +261,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    padding-top: 10vh;
     height: 1000px;
   }
 
